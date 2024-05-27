@@ -1,0 +1,207 @@
+html {
+    font-size: 100%; /* Base font-size, 1rem = 16px por defecto */
+}
+
+body {
+    background-color: #595959;
+    font-size: 1rem; /* 16px */
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 2rem; /* 32px */
+}
+
+h2 {
+    font-size: 3rem; /* 48px */
+}
+
+h4 {
+    font-size: 1rem; /* 16px */
+    font-weight: 700;
+}
+
+header {
+    padding: 1.25rem 0 0 0; /* 20px */
+    background: white;
+    text-align: center;
+}
+
+@media (min-width: 750px) {
+    header {
+        text-align: left;
+    }
+}
+
+.borrar-curso {
+    background-color: red;
+    border-radius: 50%;
+    padding: 0.3125rem 0.625rem; /* 5px 10px */
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+}
+
+#hero {
+    background-image: url(../img/hero.jpg);
+    height: 21.875rem; /* 350px */
+    background-size: cover;
+}
+
+#encabezado {
+    margin: 1.875rem 0; /* 30px */
+}
+
+.submenu {
+    position: relative;
+}
+
+.submenu #carrito {
+    display: none;
+}
+
+.submenu:hover #carrito {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    z-index: 1;
+    background-color: white;
+    padding: 1.25rem; /* 20px */
+    min-height: 25rem; /* 400px */
+    min-width: 18.75rem; /* 300px */
+}
+
+.vacio {
+    padding: 0.625rem; /* 10px */
+    background-color: crimson;
+    text-align: center;
+    border-radius: 0.625rem; /* 10px */
+    color: white;
+}
+
+.contenido-hero {
+    margin-top: 5rem; /* 80px */
+    color: white;
+}
+
+.contenido-hero form {
+    position: relative;
+    margin-bottom: 0;
+    color: black;
+}
+
+.contenido-hero form #buscador {
+    height: 3.125rem; /* 50px */
+    margin-bottom: 0;
+}
+
+.contenido-hero form .submit-buscador {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    padding: 0;
+    display: block;
+    text-indent: -9999px;
+    width: 3.125rem; /* 50px */
+    background-image: url(../img/lupa.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    border: none;
+}
+
+.barra {
+    padding: 1.25rem 0; /* 20px */
+    background: linear-gradient(to right, #741d51 0%, #e44e52 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#741d51', endColorstr='#e44e52', GradientType=1);
+}
+
+.barra p {
+    margin: 0;
+    color: white;
+}
+
+.icono {
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 3.75rem; /* 60px */
+    background-size: 1.875rem; /* 30px */
+    margin-bottom: 2.5rem; /* 40px */
+    text-align: center;
+}
+
+@media (min-width: 750px) {
+    .icono {
+        margin-bottom: 0;
+    }
+}
+
+.icono1 {
+    background-image: url(../img/icono1.png);
+}
+
+.icono2 {
+    background-image: url(../img/icono2.png);
+}
+
+icono3 {
+    background-image: url(../img/icono3.png);
+}
+
+#lista-cursos .row {
+    margin-bottom: 1.25rem; /* 20px */
+}
+
+.agregar-carrito {
+    margin: 0.625rem 0; /* 10px */
+}
+
+.card {
+    text-align: center;
+    border: 0.0625rem solid #e1e1e1; /* 1px */
+    background: white;
+}
+
+@media (min-width: 550px) {
+    .card {
+        text-align: left;
+    }
+}
+
+.info-card {
+    padding: 0.625rem 1.25rem; /* 10px 20px */
+}
+
+.info-card p,
+.card h4 {
+    margin-bottom: 0.3125rem; /* 5px */
+}
+
+.info-card .precio {
+    text-decoration: line-through;
+    font-size: 1.125rem; /* 18px */
+    margin-top: 0.625rem; /* 10px */
+}
+
+.info-card .precio span {
+    font-weight: 700;
+    font-size: 1.375rem; /* 22px */
+}
+
+.footer {
+    margin-top: 2.5rem; /* 40px */
+    border-top: 0.0625rem solid #aaa; /* 1px */
+    padding-top: 2.5rem; /* 40px */
+}
+
+.footer .menu a {
+    display: block;
+    margin-bottom: 0.625rem; /* 10px */
+    text-decoration: none;
+}
