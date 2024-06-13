@@ -12,6 +12,9 @@ p {
     color: black;
 }
 
+#bienvenida .decorativa{
+    height: 225px;
+}
 header, footer {
     background-color: #6185A8;
     color: #fff;
