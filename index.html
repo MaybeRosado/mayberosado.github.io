@@ -1,268 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Carrito</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/skeleton.css">
-    <link rel="stylesheet" href="css/custom.css">
+    <title>Series Killer</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header id="header" class="header">
-    <div class="container">
-        <div class="row">
-            <div class="four columns">
-                <img src="img/logo.jpg" id="logo">
-            </div>
-            <div class="two columns u-pull-right">
-                <ul>
-                    <li class="submenu">
-                            <img src="img/cart.png" id="img-carrito">
-                            <div id="carrito">
-                                    
-                                    <table id="lista-carrito" class="u-full-width">
-                                        <thead>
-                                            <tr>
-                                                <th>Imagen</th>
-                                                <th>Nombre</th>
-                                                <th>Precio</th>
-                                                <th>Cantidad</th>
-                                                <th></th>
-                                            </tr>
-                                        </thead>
-                                        <tbody></tbody>
-                                    </table>
-
-                                    <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
-                            </div>
-                    </li>
-                </ul>
-            </div>
-        </div> 
-    </div>
+    <header>
+        <img src="/imgs/logo.png" alt="Logo de la página con el slogan: 'Loggea, explora, comparte'" id="logo">
+        <nav>
+            <ul>
+                <li><a href="#main-content">Ir al contenido principal</a></li>
+                <li><a href="#add-series-form">Agregar Serie</a></li>
+            </ul>
+        </nav>
     </header>
+    
+    <main id="main-content">
+        <section>
+            <h2>¡Bienvenido!</h2>
+            <p>Loggea series, da tu opinión y ve las opiniones de los demás usuarios</p>
+        </section>
+        
+        <section>
+            <h2>Top 3 series</h2>
+            <!-- Slideshow container -->
+            <div class="slideshow-container" aria-label="Top 3 series slideshow">
 
-
-    <div id="hero">
-        <div class="container">
-            <div class="row">
-                    <div class="six columns">
-                        <div class="contenido-hero">
-                                <h2>Aprende algo nuevo</h2>
-                                <p>Todos los cursos a $15</p>
-                                <form action="#" id="busqueda" method="post" class="formulario">
-                                    <input class="u-full-width" type="text" placeholder="¿Que te gustaría Aprender?" id="buscador">
-                                    <input type="submit" id="submit-buscador" class="submit-buscador">
-                                </form>
-                        </div>
-                    </div>
-            </div> 
-        </div>
-    </div>
-
-    <div class="barra">
-        <div class="container">
-            <div class="row">
-                    <div class="four columns icono icono1">
-                        <p>20,000 Cursos en línea <br>
-                        Explora  los temas más recientes</p>
-                    </div>
-                    <div class="four columns icono icono2">
-                        <p>Instructores Expertos <br>
-                        Aprende con distintos estilos</p>
-                    </div>
-                    <div class="four columns icono icono3">
-                        <p>Acceso de por vida <br>
-                        Aprende a tu ritmo</p>
-                    </div>
-            </div>
-        </div>
-
-    </div>
-
-    <div id="lista-cursos" class="container">
-        <h1 id="encabezado" class="encabezado">Cursos En Línea</h1>
-        <div class="row">
-            <div class="four columns">
-                <div class="card">
-                    <img src="img/curso1.jpg" class="imagen-curso u-full-width">
-                    <div class="info-card">
-                        <h4>HTML5, CSS3, JavaScript para Principiantes</h4>
-                        <p>Juan Pedro</p>
-                        <img src="img/estrellas.png">
-                        <p class="precio">$200  <span class="u-pull-right ">$15</span></p>
-                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar Al Carrito</a>
-                    </div>
-                </div> <!--.card-->
-            </div>
-            <div class="four columns">
-                    <div class="card">
-                        <img src="img/curso2.jpg" class="imagen-curso u-full-width">
-                        <div class="info-card">
-                            <h4>Curso de Comida Vegetariana</h4>
-                            <p>Juan Pedro</p>
-                            <img src="img/estrellas.png">
-                            <p class="precio">$200  <span class="u-pull-right ">$15</span></p>
-                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="2">Agregar Al Carrito</a>
-                        </div>
-                    </div>
-            </div>
-            <div class="four columns">
-                    <div class="card">
-                        <img src="img/curso3.jpg" class="imagen-curso u-full-width">
-                        <div class="info-card">
-                            <h4>Guitarra para Principiantes</h4>
-                            <p>Juan Pedro</p>
-                            <img src="img/estrellas.png">
-                            <p class="precio">$200  <span class="u-pull-right ">$15</span></p>
-                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="3">Agregar Al Carrito</a>
-                        </div>
-                    </div> <!--.card-->
-            </div>
-
-        </div> <!--.row-->
-        <div class="row">
-            <div class="four columns">
-                <div class="card">
-                    <img src="img/curso4.jpg" class="imagen-curso u-full-width">
-                    <div class="info-card">
-                        <h4>Huerto en tu casa</h4>
-                        <p>Juan Pedro</p>
-                        <img src="img/estrellas.png">
-                        <p class="precio">$200  <span class="u-pull-right ">$15</span></p>
-                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="4">Agregar Al Carrito</a>
-                    </div>
-                </div> <!--.card-->
-            </div>
-            <div class="four columns">
-                    <div class="card">
-                        <img src="img/curso5.jpg" class="imagen-curso u-full-width">
-                        <div class="info-card">
-                            <h4>Decoración con productos de tu hogar</h4>
-                            <p>Juan Pedro</p>
-                            <img src="img/estrellas.png">
-                            <p class="precio">$200  <span class="u-pull-right ">$15</span></p>
-                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="5">Agregar Al Carrito</a>
-                        </div>
-                    </div> <!--.card-->
-            </div>
-            <div class="four columns">
-                    <div class="card">
-                        <img src="img/curso1.jpg" class="imagen-curso u-full-width">
-                        <div class="info-card">
-                            <h4>Diseño Web para Principiantes</h4>
-                            <p>Juan Pedro</p>
-                            <img src="img/estrellas.png">
-                            <p class="precio">$200  <span class="u-pull-right ">$15</span></p>
-                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="6">Agregar Al Carrito</a>
-                        </div>
-                    </div> <!--.card-->
-            </div>
-        </div> <!--.row-->
-        <div class="row">
-            <div class="four columns">
-                <div class="card">
-                    <img src="img/curso2.jpg" class="imagen-curso u-full-width">
-                    <div class="info-card">
-                        <h4>Comida Mexicana para principiantes</h4>
-                        <p>Juan Pedro</p>
-                        <img src="img/estrellas.png">
-                        <p class="precio">$200  <span class="u-pull-right ">$15</span></p>
-                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="7">Agregar Al Carrito</a>
-                    </div>
-                </div> <!--.card-->
-            </div>
-            <div class="four columns">
-                    <div class="card">
-                        <img src="img/curso3.jpg" class="imagen-curso u-full-width">
-                        <div class="info-card">
-                            <h4>Estudio Musical en tu casa</h4>
-                            <p>Juan Pedro</p>
-                            <img src="img/estrellas.png">
-                            <p class="precio">$200  <span class="u-pull-right ">$15</span></p>
-                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="8">Agregar Al Carrito</a>
-                        </div>
-                    </div> <!--.card-->
-            </div>
-            <div class="four columns">
-                    <div class="card">
-                        <img src="img/curso4.jpg" class="imagen-curso u-full-width">
-                        <div class="info-card">
-                            <h4>Cosecha tus propias frutas y verduras</h4>
-                            <p>Juan Pedro</p>
-                            <img src="img/estrellas.png">
-                            <p class="precio">$200  <span class="u-pull-right ">$15</span></p>
-                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="9">Agregar Al Carrito</a>
-                        </div>
-                    </div> <!--.card-->
-            </div>
-        </div> <!--.row-->
-        <div class="row">
-                <div class="four columns">
-                    <div class="card">
-                        <img src="img/curso5.jpg" class="imagen-curso u-full-width">
-                        <div class="info-card">
-                            <h4>Prepara galletas caseras</h4>
-                            <p>Juan Pedro</p>
-                            <img src="img/estrellas.png">
-                            <p class="precio">$200  <span class="u-pull-right ">$15</span></p>
-                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="10">Agregar Al Carrito</a>
-                        </div>
-                    </div> <!--.card-->
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="/imgs/succession.jpg" alt="Poster de la serie Succession">
                 </div>
-                <div class="four columns">
-                        <div class="card">
-                            <img src="img/curso1.jpg" class="imagen-curso u-full-width">
-                            <div class="info-card">
-                                <h4>JavaScript Moderno con ES6</h4>
-                                <p>Juan Pedro</p>
-                                <img src="img/estrellas.png">
-                                <p class="precio">$200  <span class="u-pull-right ">$15</span></p>
-                                <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="11">Agregar Al Carrito</a>
-                            </div>
-                        </div> <!--.card-->
+              
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="/imgs/breakingbad.jpg" alt="Poster de la serie Breaking Bad">
                 </div>
-                <div class="four columns">
-                        <div class="card">
-                            <img src="img/curso2.jpg" class="imagen-curso u-full-width">
-                            <div class="info-card">
-                                <h4>100 Recetas de Comida Natural</h4>
-                                <p>Juan Pedro</p>
-                                <img src="img/estrellas.png">
-                                <p class="precio">$200  <span class="u-pull-right ">$15</span></p>
-                                <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="12">Agregar Al Carrito</a>
-                            </div>
-                        </div> <!--.card-->
+              
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="/imgs/thebear.jpg" alt="Poster de la serie The Bear">
                 </div>
-            </div> <!--.row-->
-    </div>  
-
-    <footer id="footer" class="footer">
-        <div class="container">
-            <div class="row">
-                    <div class="four columns">
-                            <nav id="principal" class="menu">
-                                <a class="enlace" href="#">Para tu Negocio</a>
-                                <a class="enlace" href="#">Conviertete en Instructor</a>
-                                <a class="enlace" href="#">Aplicaciones Móviles</a>
-                                <a class="enlace" href="#">Soporte</a>
-                                <a class="enlace" href="#">Temas</a>
-                            </nav>
-                    </div>
-                    <div class="four columns">
-                            <nav id="secundaria" class="menu">
-                                <a class="enlace" href="#">¿Quienes Somos?</a>
-                                <a class="enlace" href="#">Empleo</a>
-                                <a class="enlace" href="#">Blog</a>
-                            </nav>
-                    </div>
+              
+                <!-- Next and previous buttons -->
+                <button class="prev" onclick="plusSlides(-1)" aria-label="Previous slide">&#10094;</button>
+                <button class="next" onclick="plusSlides(1)" aria-label="Next slide">&#10095;</button>
             </div>
-        </div>
+            <br>
+              
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <button class="dot" onclick="currentSlide(1)" aria-label="Slide 1"></button>
+                <button class="dot" onclick="currentSlide(2)" aria-label="Slide 2"></button>
+                <button class="dot" onclick="currentSlide(3)" aria-label="Slide 3"></button>
+            </div>
+                    
+            <div>
+                <h3>La mejor escena en la historia de las series</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/OeL1COkQCwM" title="La mejor escena en la historia de las series" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Tabla de Valoraciones</h2>
+            <table id="series-table">
+                <caption>Tabla de Series y Calificaciones</caption>
+                <thead>
+                    <tr>
+                        <th>Serie</th>
+                        <th>Calificación</th>
+                        <th>Reseña</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Breaking Bad</td>
+                        <td>9.5</td>
+                        <td>Una serie intensa con grandes actuaciones.</td>
+                    </tr>
+                    <tr>
+                        <td>Stranger Things</td>
+                        <td>8.7</td>
+                        <td>Una fascinante mezcla de nostalgia y terror.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <section id="add-series-form">
+            <h2>Agregar Serie</h2>
+            <form id="series-form">
+                <fieldset>
+                    <legend>Información de la Serie</legend>
+                    <div>
+                        <label for="series-name">Nombre de la Serie:</label>
+                        <input type="text" id="series-name" name="series-name" required>
+                    </div>
+                    <div>
+                        <label for="rating">Calificación (entre 1 y 10):</label>
+                        <input type="number" id="rating" name="rating" min="1" max="10" required>
+                    </div>
+                    <div>
+                        <label for="review">Reseña:</label>
+                        <textarea id="review" name="review" required></textarea>
+                    </div>
+                    <div>
+                        <button type="submit">Agregar</button>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; Serie Killer S.A de C.V.</p>
     </footer>
 
-    <script src="js/app.js"></script>
-
+    <script src="script.js"></script>
 </body>
 </html>

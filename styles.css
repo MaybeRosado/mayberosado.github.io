@@ -1,0 +1,187 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #2c3e50;
+    text-align: center;
+}
+
+p {
+    color: black;
+}
+
+header, footer {
+    background-color: #6185A8;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+header img{
+    height: 200px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+a {
+    color: #141414;
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    text-decoration: underline;
+    outline: 2px solid #000;
+    outline-offset: 2px;
+}
+
+main {
+    padding: 1em;
+}
+
+h1, h2, h3 {
+    color: black;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1em 0;
+    background-color: #fff;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 0.5em;
+    text-align: left;
+}
+
+caption {
+    text-align: left;
+    padding: 0.5em 0;
+    font-weight: bold;
+    background-color: #6185A8;
+    color: #000;
+}
+
+form label {
+    display: block;
+    margin: 0.5em 0 0.2em;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #18bc9c;
+    outline: 2px solid #18bc9c;
+    outline-offset: 2px;
+}
+
+form button {
+    background-color: #BC2A1A;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 0.5em;
+    border-radius: 4px;
+}
+
+form button:hover, form button:focus {
+    background-color: #c0392b;
+    outline: 2px solid #e74c3c;
+    outline-offset: 2px;
+}
+
+/* Slideshow styles */
+
+img{
+    height: 800px;
+}
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: grey;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.prev {
+    left: 10px; /* Adjust the left position */
+    border-radius: 3px 0 0 3px;
+}
+
+.next {
+    right: 10px; /* Adjust the right position to center the button more */
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
